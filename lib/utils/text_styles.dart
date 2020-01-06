@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:github_demo/utils/screen_util.dart';
 
 import 'colors.dart';
 
@@ -14,27 +15,40 @@ class FontFamily {
 
 class TextStyles {
 
-  static TextStyle get edittext => TextStyle(
-    fontSize: 16,
+  static TextStyle get text_bold => TextStyle(
+    fontSize: FontSize.s18,
     color: AppColors.title,
+      fontFamily: FontFamily.bold
   );
 
   static TextStyle get hint_edittext => TextStyle(
-    fontSize:16,
+    fontSize: FontSize.s16,
     color: AppColors.grey,
     fontFamily: FontFamily.light,
   );
 
   static TextStyle get button => TextStyle(
-    fontSize:16,
+    fontSize: FontSize.s16,
     color: AppColors.white,
     fontFamily: FontFamily.regular,
   );
 
 
   static TextStyle get text_title => TextStyle(
-    fontSize: 20,
+    fontSize: FontSize.s20,
     color: AppColors.white,
     fontFamily: FontFamily.regular,
+  );
+
+  static TextStyle get text_small => TextStyle(
+    fontSize: FontSize.s12,
+    color: AppColors.title,
+    fontFamily: FontFamily.regular,
+  );
+
+  static TextStyle get text_small_bold => TextStyle(
+    fontSize: FontSize.s12,
+    color: AppColors.title,
+    fontFamily: FontFamily.bold,
   );
 }

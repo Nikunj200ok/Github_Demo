@@ -20,6 +20,7 @@ dependencies:
   flutter:
     sdk: flutter
   json_annotation: ^3.0.1
+  flutter_screenutil: ^0.7.0
   http: ^0.12.0+3
   modal_progress_hud: ^0.1.3
 
